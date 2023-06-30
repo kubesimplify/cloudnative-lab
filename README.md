@@ -1,6 +1,8 @@
 # The Cloud Native Lab 🧪
 
-![](https://github.com/kubesimplify/cloudnative-lab/assets/72245772/e063b8e8-84b1-478c-95a7-f314ad861979)
+<p align="center">
+<img src="./static/poster.png" alt="poster" width=500px height=505px align="center">
+</p>
 
 This repo is for all the **resources** & **project files** for the Cloud Native Lab series on [Twitch](https://www.twitch.tv/kubesimplify)!
 
