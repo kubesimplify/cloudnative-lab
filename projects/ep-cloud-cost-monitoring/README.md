@@ -24,7 +24,7 @@ Provisioning an AWS Cloud infrastructure using Terraform to manage a simple Djan
 
 ## Project Breakdown/Milestones
 
-- Milestone 1
+- **Milestone 1**
     - [ ] Project Idea Discussion
     - [ ] Run the [Django app](https://github.com/verma-kunal/django-todo) locally
     - [ ] Build dockerfile & docker compose
