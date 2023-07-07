@@ -3,6 +3,19 @@
 ## Aim
 Provisioning an AWS Cloud infrastructure using Terraform to manage a simple Django application. Additionally, set up cloud costs monitoring using [Komiser](https://docs.komiser.io/)
 
+## Cloud Cost Monitoring
+### What is it?
+Refers to the practice of tracking and analyzing the expenses incurred in using cloud resources and services. It involves monitoring, analyzing, and optimizing cloud usage to ensure efficient cost management and budget control.
+
+### Why is it important?
+- Cost optimization: helps identify areas of excessive spending and enables businesses to optimize their cloud resources, resulting in cost savings and improved operational efficiency.
+- Budget control: organizations can gain better control over their expenses and ensure that they stay within budgetary limits, preventing unexpected financial burdens.
+- Resource allocation: provides insights into resource utilization patterns, allowing businesses to allocate resources effectively and scale up or down as needed, ensuring optimal resource allocation and cost efficiency.
+- Decision-making: helps organizations make informed decisions regarding cloud resource usage, service selection, and overall cloud strategy. It enables them to align their cloud investments with business goals and make cost-effective decisions that drive growth and innovation.
+
+### Using Komiser for Cloud Cost Monitoring
+Komiser's goal is to help you spend less time switching between confusing cloud provider consoles and have a clear view of what you manage in the cloud. To have quick access to what is important to you. Through this transparency, you can **uncover hidden costs**, **gain helpful insight** and start **taking control of your infrastructure**.
+
 ## Technologies being used
 - Django
 - AWS
@@ -37,3 +50,4 @@ Provisioning an AWS Cloud infrastructure using Terraform to manage a simple Djan
 ## Resources
 
 - [Tailwarden Blog](https://www.tailwarden.com/blog/monitoring-cloud-costs-and-usage-of-a-next-js-application-with-komiser)
+- [Komiser Documentation](https://docs.komiser.io/docs/intro)
