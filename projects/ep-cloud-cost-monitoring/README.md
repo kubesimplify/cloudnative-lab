@@ -50,4 +50,6 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
 ## Resources
 
 - [Tailwarden Blog](https://www.tailwarden.com/blog/monitoring-cloud-costs-and-usage-of-a-next-js-application-with-komiser)
+- [Tutorial: Deploy & monitor Next.js app with Komiser](https://www.youtube.com/watch?v=q7m_-iEjc6U)
 - [Komiser Documentation](https://docs.komiser.io/docs/intro)
+- [How to deploy Komiser to AWS with Terraform](https://www.youtube.com/watch?v=Hmerp_HMEf8)
