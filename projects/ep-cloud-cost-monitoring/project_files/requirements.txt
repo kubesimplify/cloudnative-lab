@@ -1,0 +1,6 @@
+asgiref==3.7.2
+certifi==2023.5.7
+Django==3.2.19
+pytz==2023.3
+sqlparse==0.4.4
+typing_extensions==4.6.3
