@@ -38,9 +38,9 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
 ## Project Breakdown/Milestones
 
 - **Milestone 1**
-    - [ ] Project Idea Discussion
-    - [ ] Run the [Django app](https://github.com/shreys7/django-todo) locally
-    - [ ] Build dockerfile & docker compose
+    - [X] Project Idea Discussion
+    - [X] Run the [Django app](https://github.com/shreys7/django-todo) locally
+    - [X] Build dockerfile & docker compose
     - [ ] Create IAM EC2 policy
     - [ ] Create an EC2 instance
     - [ ] Create security group for EC2 instance
