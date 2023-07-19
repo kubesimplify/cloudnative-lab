@@ -59,3 +59,21 @@ docs/_build/
 target/
 
 .DS_Store
+
+# For terraform
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+
