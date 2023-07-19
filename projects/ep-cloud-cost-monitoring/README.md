@@ -41,15 +41,21 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
     - [X] Project Idea Discussion
     - [X] Run the [Django app](https://github.com/shreys7/django-todo) locally
     - [X] Build dockerfile & docker compose
-    - [ ] Create IAM EC2 policy
-    - [ ] Create an EC2 instance
-    - [ ] Create security group for EC2 instance
-    - [ ] Provision the instance + SSH
-
-
+    - [X] Create IAM EC2 policy
+    - [X] Create an EC2 instance
+    - [X] Create security group for EC2 instance
+    - [X] Provision the instance + SSH
+- **Milestone 2**
+    - [ ] Initial EC2 configuration using script
+    - [ ] Provision elastic load balancer
+    - [ ] Deploy containerised app on EC2 - **Ansible Playbook**
+    - [ ] Access the deployed app
+- **Milestone 3**
+    - [ ] Implementing Komiser to monitor AWS resources
 ## Resources
 
 - [Tailwarden Blog](https://www.tailwarden.com/blog/monitoring-cloud-costs-and-usage-of-a-next-js-application-with-komiser)
 - [Tutorial: Deploy & monitor Next.js app with Komiser](https://www.youtube.com/watch?v=q7m_-iEjc6U)
 - [Komiser Documentation](https://docs.komiser.io/docs/intro)
 - [How to deploy Komiser to AWS with Terraform](https://www.youtube.com/watch?v=Hmerp_HMEf8)
+- [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html)
