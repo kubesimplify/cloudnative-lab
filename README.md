@@ -24,3 +24,7 @@ Timings: **TBD**
 ## 🎙 About the Host
 
 [Kunal Verma](https://github.com/verma-kunal) is a **DevOps and Cloud Advocate** with a passion for **Open Source**. He's been involved in the DevOps and open-source ecosystem for more than a year and has a strong experience in contributing to some major projects within the [CNCF](https://www.cncf.io/), such as **Kubernetes** and **Layer5**, **public speaking**, **community management**, and **content creation**.
+
+## ❓ Have any doubts/questions?
+
+Reach out to us at **#cloudnative-lab** channel on [Kubesimplify Discord](https://discord.gg/QmsqabA2xT) and say Hi 👋
