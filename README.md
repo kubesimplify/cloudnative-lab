@@ -19,7 +19,7 @@ A series of **live streams**, focused on the **"learn-by-doing"** approach where
 
 The [Kubesimplify Twitch channel](https://www.twitch.tv/kubesimplify).
 
-Timings: **TBD**
+Timings: **Weekly on Friday at 8:30pm IST**
 
 ## 🎙 About the Host
 
