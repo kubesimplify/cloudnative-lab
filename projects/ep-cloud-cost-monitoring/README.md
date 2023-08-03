@@ -46,8 +46,8 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
     - [X] Create security group for EC2 instance
     - [X] Provision the instance + SSH
 - **Milestone 2**
-    - [ ] Initial EC2 configuration using script
-    - [ ] Provision elastic load balancer
+    - [X] Initial EC2 configuration using script
+    - [X] Provision elastic load balancer
     - [ ] Deploy containerised app on EC2 - **Ansible Playbook**
     - [ ] Access the deployed app
 - **Milestone 3**
