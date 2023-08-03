@@ -50,6 +50,7 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
     - [X] Provision elastic load balancer
     - [ ] Deploy containerised app on EC2 - **Ansible Playbook**
     - [ ] Access the deployed app
+    - [ ] Implement Terraform State Lock (s3 + DynamoDB)
 - **Milestone 3**
     - [ ] Implementing Komiser to monitor AWS resources
 ## Resources
