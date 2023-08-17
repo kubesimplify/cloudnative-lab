@@ -12,3 +12,9 @@ sudo apt install -y docker-ce
 sudo mkdir -p ~/.docker/cli-plugins/
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
 sudo chmod +x ~/.docker/cli-plugins/docker-compose
+
+# On completion:
+echo "EC2 Script Installation Complete"
+
+# Git clone
+git clone https://github.com/kubesimplify/cloudnative-lab.git

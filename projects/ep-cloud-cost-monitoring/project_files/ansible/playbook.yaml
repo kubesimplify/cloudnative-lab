@@ -1,0 +1,14 @@
+- name: AWS EC2 Komiser Playbook
+  hosts: vm01
+  tasks:
+  - name: Check if Docker is running!
+    ansible.builtin.systemd:
+      name: docker.service
+      state: started
+      enabled: true
+  - name: Run Dockerfile
+    ansible.builtin.command: 
+    args:
+      chdir: /cloudnative-lab/projects/ep-cloud-cost-monitoring/project_files
+      cmd: sudo docker compose -f docker-compose.yml up -d
+      

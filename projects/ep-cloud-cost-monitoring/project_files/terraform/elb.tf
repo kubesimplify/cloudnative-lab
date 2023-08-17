@@ -84,3 +84,8 @@ resource "aws_elb" "komiser_elb" {
   }
 }
 
+# Output the ELB Domain:
+output "komiser_elb_dns" {
+  value = aws_elb.komiser_elb.dns_name
+  depends_on = [aws_elb.komiser_elb]
+}
