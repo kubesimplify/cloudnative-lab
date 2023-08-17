@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": "file:///Users/kunalverma/Downloads/repos/cloudnative-lab/projects/ep-cloud-cost-monitoring/project_files/ansible/inventory.yaml"
-    }
-}
