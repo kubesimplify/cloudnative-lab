@@ -2,7 +2,7 @@
 vms:
   hosts:
     vm01:
-      ansible_host: 44.218.126.15
+      ansible_host: 18.235.67.153
       ansible_ssh_user: ubuntu
-      ansible_ssh_private_key_file: "/Users/kunalverma/.ssh/komiser-aws"
+      ansible_ssh_private_key_file: "LOCATION_OF_PRIVATE_SSH_FILE"
       

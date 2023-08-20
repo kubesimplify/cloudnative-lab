@@ -15,6 +15,7 @@ resource "aws_instance" "komiser_instance" {
   }
 }
 
+# SSH key pair:
 resource "aws_key_pair" "ssh_key" {
   key_name   = "koimser_ssh_key"
   public_key = file("~/.ssh/komiser-aws.pub") # ssh public key location
@@ -24,21 +25,30 @@ resource "aws_key_pair" "ssh_key" {
   }
 }
 
-# Elastic IP:
+# Elastic IP resource:
 resource "aws_eip" "koimser_instance_ip" {
   instance = "${aws_instance.komiser_instance.id}"
   # vpc      = true 
   depends_on = [aws_instance.komiser_instance]
+  tags = {
+    Name = "aws-komiser"
+  }
 }
+# Elastic IP association:
 resource "aws_eip_association" "eip_association" {
   instance_id   = "${aws_instance.komiser_instance.id}"
   allocation_id = "${aws_eip.koimser_instance_ip.id}"
+
+  tags = {
+    Name = "aws-komiser"
+  }
 }
 
+# Security group resource:
 resource "aws_security_group" "allow_tls_1" {
   name        = "allow_tls_1"
   description = "Allow TLS inbound traffic"
-  vpc_id      = "vpc-0bdd3ce0f25d86750" # default
+  vpc_id      = "vpc-0bdd3ce0f25d86750" # default vpc
 
   ingress {
         description = "For ssh"
@@ -70,6 +80,7 @@ resource "aws_security_group" "allow_tls_1" {
   }
 }
 
+# Output the instance IP:
 output "ec2_ip" {
   value = aws_eip.koimser_instance_ip.public_ip
 }

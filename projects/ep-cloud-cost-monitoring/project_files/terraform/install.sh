@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Install docker:
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -13,8 +14,5 @@ sudo mkdir -p ~/.docker/cli-plugins/
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
 sudo chmod +x ~/.docker/cli-plugins/docker-compose
 
-# On completion:
-echo "EC2 Script Installation Complete"
-
-# Git clone
+# Clone the Git repo:
 git clone https://github.com/kubesimplify/cloudnative-lab.git

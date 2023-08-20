@@ -13,4 +13,8 @@ resource "aws_iam_policy" "komiser_policy" {
 resource "aws_iam_user_policy_attachment" "komiser_policy_attachment" {
  user       = aws_iam_user.komiser_iam.name
  policy_arn = aws_iam_policy.komiser_policy.arn
+
+ tags = {
+    Name = "aws-komiser"
+  }
 }

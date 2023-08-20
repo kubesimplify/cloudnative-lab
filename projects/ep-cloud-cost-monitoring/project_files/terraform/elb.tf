@@ -1,6 +1,4 @@
-# Resources for the ELB
-
-
+# ELB security group:
 resource "aws_security_group" "komiser_elb_sg" {
   name        = "komiser_elb"
   description = "Komiser ELB Security Group"
@@ -25,8 +23,8 @@ resource "aws_security_group" "komiser_elb_sg" {
   }
 }
 
+# Resources for ELB logging:
 data "aws_elb_service_account" "main" {}
-
 data "aws_iam_policy_document" "allow_elb_logging" {
   statement {
     effect = "Allow"
@@ -47,7 +45,7 @@ resource "aws_s3_bucket_policy" "allow_elb_logging" {
 }
 
 
-# Create a new load balancer
+# Create a new Elastic load balancer:
 resource "aws_elb" "komiser_elb" {
   name               = "komiser-elb"
   availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
