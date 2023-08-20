@@ -33,7 +33,7 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
 
 ## Project Diagram
 
-![](../../static/projects/cloud-cost-monitor-komiser.png)
+![](../../static/projects/cloud-cost-monitoring.png)
 
 ## Project Breakdown/Milestones
 
