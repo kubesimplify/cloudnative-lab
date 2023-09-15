@@ -1,4 +1,4 @@
-# <img src="https://hackmd.io/_uploads/Skn0EA-kp.png" alt="poster" width=50px height=50px align="center"> Episode - Building a Kubernetes Operator
+# <img src="https://github.com/kubesimplify/cloudnative-lab/assets/72245772/de679a18-a457-43c0-9cb8-e75d6b87b348" alt="poster" width=50px height=50px align="center"> Episode - Building a Kubernetes Operator
 
 ## Aim
 
