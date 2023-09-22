@@ -11,9 +11,24 @@ var (
 	amount int
 )
 
-func Add() {
+func BankExampleForCounter() {
 	amount++
 	fmt.Println(amount)
+}
+
+func BasicTypes() {
+	var i int64 = 0xff
+	fmt.Printf("%d, %x, %s, %o, %v\n", i, i, i, i, i)
+
+	hsMap := make(map[string]any, 0)
+	hsMap["hello"] = func() any {
+		type Data struct {
+			Data string
+		}
+		return Data{Data: "nice"}
+	}()
+
+	fmt.Println(hsMap)
 }
 
 func main() {
@@ -26,7 +41,7 @@ func main() {
 
 			mux.Lock()
 			defer mux.Unlock()
-			Add()
+			BankExampleForCounter()
 		}()
 	}
 
@@ -34,4 +49,9 @@ func main() {
 	fmt.Println("DONE")
 
 	fmt.Println(kubesimplify.Add(5, 6))
+
+	BasicTypes()
+
+	var server Discord = &Kubernetes{Url: "kubernetes.io"}
+	_ = server.Meeting("Hello from demo!!")
 }
