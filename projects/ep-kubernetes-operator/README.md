@@ -5,27 +5,70 @@
 To learn the concepts involved and build a **Kubernetes Operator** from scratch!
 
 ## Technologies being used
+
 - Go
-- Kubernetes
+- Kubernetes API
+- [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 
 ## Project Breakdown/Milestones
 
-- **Day 1 - Basics of Go**
+### Day 1 - Basics of Go
+- [x] Basic data types
+- [x] Structs
+- [x] Pointers
+- [x] Interfaces
+- [x] Basic overview for packages and exports 
+- [x] Go-routine (optional)
 
-    - [x] Basic data types
-    - [x] Structs
-    - [x] Pointers
-    - [x] Interfaces
-    - [x] Basic overview for packages and exports 
-    - [x] Go-routine (optional)
-    - [ ] Generics (optional)
+### Day 2 - Kubernetes Concepts 
 
-- **Day 2 - Kubernetes Concepts Needed**
-    - [ ] Understanding K8s core API
-    - [ ] Different API versions (`extensions/v1beta1`, `apps/v1`, etc.)
+**Why Build a Kubernetes Operator?**
 
-- **Day 3**
-    - [ ] Building the Operator
+- [ ] What is a Kubernetes Operator (Resource + controller)
+- [ ] Explain kubernetes as a platform.
+- [ ] Explain Resources as “Core blocks” of the platform (use examples).
+- [ ] Explain Controller as “Driver of Core blocks” of the platform 
+- [ ] Explain “Extending Kubernetes without changing main code”.
+
+**Pre-requisites (Kubernetes API server)**
+
+- [ ] Kubectl under the hood.
+- [ ] Explain API conventions.
+- [ ] Explain Group, Version, Resource and Kinds.
+- [ ] Kind v/s Resource **(IMP)**
+- [ ] Analogy of Kinds as classes and Resources as Instance
+- [ ] How the URLs work when talking to Kubernetes API server.
+
+**Recap of main takeaways**
+
+### Day 3 - Building the Operator
+
+**Intro to kubebuilder**
+- [ ] Documentation overview
+
+**Getting Started:**
+
+- [ ] Define a Project
+- Concepts:
+    - [ ] Manager
+    - [ ] Schemes (with an example)
+    - [ ] Main file for manager
+
+**Defining a new API - Some important Concepts**
+
+- [ ] TypeMeta
+- [ ] ObjectMeta
+- [ ] Spec
+- [ ] Status
+- [ ] Briefly touch
+- [ ] DeepCopy funcs
+- [ ] GroupVersion
+- [ ] Controller
+- [ ] Reconcile struct
+- [ ] Reconcile function
+
+**Make it work 🎉**
+
 
 ## Resources
 
