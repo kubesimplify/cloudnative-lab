@@ -11,6 +11,7 @@ To learn the concepts involved and build a **Kubernetes Operator** from scratch!
 ## Project Breakdown/Milestones
 
 - **Day 1 - Basics of Go**
+
     - [x] Basic data types
     - [x] Structs
     - [x] Pointers
