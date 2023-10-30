@@ -1,3 +1,4 @@
+# Run the playbook: "ansible-playbook -i inventory.yaml playbook.yaml"
 - name: AWS <> Komiser Playbook
   hosts: vm01
   tasks:

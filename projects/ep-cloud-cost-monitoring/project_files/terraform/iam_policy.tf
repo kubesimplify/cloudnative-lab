@@ -4,17 +4,13 @@ resource "aws_iam_policy" "komiser_policy" {
 
   policy = file("policy.json")
 
-  tags = {
-    Name = "aws-komiser"
+ tags = {
+    Name = var.tag_name
   }
 }
 
-# Policy Attachment
+# Policy Attachment with the user:
 resource "aws_iam_user_policy_attachment" "komiser_policy_attachment" {
  user       = aws_iam_user.komiser_iam.name
  policy_arn = aws_iam_policy.komiser_policy.arn
-
- tags = {
-    Name = "aws-komiser"
-  }
 }

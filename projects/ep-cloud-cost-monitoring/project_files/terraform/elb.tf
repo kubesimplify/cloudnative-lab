@@ -19,31 +19,9 @@ resource "aws_security_group" "komiser_elb_sg" {
   }
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
-
-# Resources for ELB logging:
-data "aws_elb_service_account" "main" {}
-data "aws_iam_policy_document" "allow_elb_logging" {
-  statement {
-    effect = "Allow"
-
-    principals {
-      type        = "AWS"
-      identifiers = [data.aws_elb_service_account.main.arn]
-    }
-
-    actions   = ["s3:PutObject"]
-    resources = ["arn:aws:s3:::komiser-elb-logs/*"]
-  }
-}
-
-resource "aws_s3_bucket_policy" "allow_elb_logging" {
-  bucket = "komiser-elb-logs"
-  policy = data.aws_iam_policy_document.allow_elb_logging.json
-}
-
 
 # Create a new Elastic load balancer:
 resource "aws_elb" "komiser_elb" {
@@ -78,7 +56,7 @@ resource "aws_elb" "komiser_elb" {
   connection_draining_timeout = 400
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 

@@ -1,0 +1,8 @@
+[[aws]]
+name="Django-Komiser Project"
+source="CREDENTIALS_FILE"
+path="/Users/kunalverma/.aws/credentials"
+profile="Admin-User"
+
+[sqlite]
+file = "komiser.db"

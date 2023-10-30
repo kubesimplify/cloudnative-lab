@@ -52,7 +52,7 @@ Komiser's goal is to help you spend less time switching between confusing cloud 
     - [X] Access the deployed app
     - [X] Additional: Implement Terraform State Lock (s3 + DynamoDB)
 - **Milestone 3**
-    - [ ] Implementing Komiser to monitor AWS resources
+    - [X] Implementing Komiser to monitor AWS resources
 ## Resources
 
 - [Tailwarden Blog](https://www.tailwarden.com/blog/monitoring-cloud-costs-and-usage-of-a-next-js-application-with-komiser)

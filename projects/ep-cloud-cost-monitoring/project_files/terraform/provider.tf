@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
-  profile = "komiser-aws-user" # change the AWS profile here
+  region = var.aws_region
+  profile = var.aws_profile
 }

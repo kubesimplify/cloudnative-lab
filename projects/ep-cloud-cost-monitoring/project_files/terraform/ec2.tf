@@ -1,7 +1,7 @@
 # EC2 instance resource:
 resource "aws_instance" "komiser_instance" {
-  ami           = "ami-053b0d53c279acc90"
-  instance_type = "t2.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
   key_name      = aws_key_pair.ssh_key.key_name
 
   vpc_security_group_ids = [aws_security_group.allow_tls_1.id]
@@ -11,44 +11,40 @@ resource "aws_instance" "komiser_instance" {
   user_data  = "${file("install.sh")}"
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 
-# SSH key pair:
+# SSH key pair
 resource "aws_key_pair" "ssh_key" {
-  key_name   = "koimser_ssh_key"
-  public_key = file("~/.ssh/komiser-aws.pub") # ssh public key location
+  key_name   = var.key_name
+  public_key = file(var.public_key_path)
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 
-# Elastic IP resource:
+# Elastic IP resource
 resource "aws_eip" "koimser_instance_ip" {
-  instance = "${aws_instance.komiser_instance.id}"
-  # vpc      = true 
+  instance = aws_instance.komiser_instance.id
   depends_on = [aws_instance.komiser_instance]
+
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 # Elastic IP association:
 resource "aws_eip_association" "eip_association" {
   instance_id   = "${aws_instance.komiser_instance.id}"
   allocation_id = "${aws_eip.koimser_instance_ip.id}"
-
-  tags = {
-    Name = "aws-komiser"
-  }
 }
 
 # Security group resource:
 resource "aws_security_group" "allow_tls_1" {
   name        = "allow_tls_1"
   description = "Allow TLS inbound traffic"
-  vpc_id      = "vpc-0bdd3ce0f25d86750" # default vpc
+  vpc_id      = var.vpc_id
 
   ingress {
         description = "For ssh"
@@ -76,7 +72,7 @@ resource "aws_security_group" "allow_tls_1" {
   }
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 

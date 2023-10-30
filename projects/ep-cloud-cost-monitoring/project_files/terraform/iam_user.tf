@@ -2,7 +2,7 @@ resource "aws_iam_user" "komiser_iam" {
   name = "komiser-aws-user"
 
   tags = {
-    Name = "aws-komiser"
+    Name = var.tag_name
   }
 }
 
@@ -26,4 +26,5 @@ output "secret"{
 }
 output "iam_password" {
  value = aws_iam_user_login_profile.komiser_iam_login.password
+ sensitive = true
 }

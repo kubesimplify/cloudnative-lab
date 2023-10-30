@@ -1,8 +1,8 @@
-# ansible-inventory -i inventory.yaml --list
+# Ping managed node: "ansible vms -m ping -i inventory.yaml"
 vms:
   hosts:
     vm01:
-      ansible_host: 18.235.67.153
+      ansible_host: 100.25.18.132 # IP of EC2 instance
       ansible_ssh_user: ubuntu
-      ansible_ssh_private_key_file: "LOCATION_OF_PRIVATE_SSH_FILE"
+      ansible_ssh_private_key_file: "PRIVATE_SSH_FILE"
       
